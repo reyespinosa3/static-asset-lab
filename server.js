@@ -27,16 +27,22 @@ app.get("/videos", (req, res) => {
 
 // set up to show specific video request by user
 app.get("/videos/:id", (req, res) => {
-  console.log(req.params.id);
   let data = {
     comedian: videos[req.params.id - 1].comedian,
     title: videos[req.params.id - 1].title,
     url: videos[req.params.id - 1].url
   }
-  console.log(data);
   res.render('videos/show', data)
 });
-
+ app.get('/vids/:id', (req, res) => {
+   let num = req.params.id -1;
+   let data = {
+     comedian: videos[num].comedian,
+     title: videos[num].title,
+     url: videos[num].url
+   }
+   res.render('videos/show', data)
+ });
 
 // uses ejs engine and views to dynamically populate variables
 app.get('/helloworld', (req, res) => {
@@ -51,6 +57,8 @@ app.get('/helloworld', (req, res) => {
 })
 
 // routes to local server home page
+// my page with buttons to show or hide pictures
+// of dogs playing soccer
 app.get('/home', (req, res) =>
   res.sendFile('index.html', {root: __dirname + "/public"}));
 
