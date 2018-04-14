@@ -3,27 +3,43 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Rey's Static Asset Page</title>
+    <title>Puppies Playing Sports</title>
   </head>
   <body>
-    <h1>This is my Static-Asset Lab Project</h1>
-    <p>This is my second locally run server project.</p>
-    <p>I'm mainly going to show a few pictures of dogs here.</p>
-    <p>Click any button below to show an image of a dog playing soccer</p>
-    <p>Click the button again to remove the picture.</p>
+    <section>
+      <h1>Puppies Playing Sports</h1>
+        <p>Welcome to the sports playground for puppies!</p>
+        <p>Seeing how I LOVE dogs, I decided to collect images of</p>
+        <p>puppies playing various sports.</p>
+      <h2>Use the buttons below to see just how much fun puppies have playing sports.</h2>
+        <p>Click any button below to show an image of a dog playing a sport</p>
+        <p>Click the button again to remove the picture.</p>
+    </section>
 
     <section>
+      <button id="all">Show Me All Dogs</button>
       <button id="soccerdog">Soccer Dog</button>
       <button id="dribbledog">Kick The Ball</button>
       <button id="goaliedog">Gooooaaaalllll!!!</button>
+      <button id="footballdog">Pigskin Puppy</button>
+      <button id="catchfootballdog">Catch the Pigskin</button>
+      <button id="hockeydog">Playing Hockey</button>
+      <button id="tennisdog">15 - Love</button>
+      <button id="basketballdog">Toss Me the Rock</button>
     </section>
 
     <section>
-      <img id="one" class="hidden" src="images/soccerdog.jpg">
-      <img id="two" class="hidden"  src="images/soccerkickdog.jpg">
-      <img id="three" class="hidden"  src="images/soccergoaliedog.jpg">
+      <img id="one" class="hidden sports" src="images/soccerdog.jpg">
+      <img id="two" class="hidden sports"  src="images/soccerkickdog.jpg">
+      <img id="three" class="hidden sports"  src="images/soccergoaliedog.jpg">
+      <img id="four" class="hidden sports" src="images/footballdog.jpg">
+      <img id="five" class="hidden sports" src="images/catchfootballdog.jpg">
+      <img id="six" class="hidden sports" src="images/hockeydog.jpg">
+      <img id="seven" class="hidden sports" src="images/tennisdog.jpg">
+      <img id="eight" class="hidden sports" src="images/basketballdog.jpg">
     </section>
 
+    <footer><span id="name">Created by Rey Espinosa</span><span id="date">April 14, 2018</span></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </body>
