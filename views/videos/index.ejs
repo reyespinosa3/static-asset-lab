@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <% for (let i = 0; i < videos.length; i++) { %>
+<h1> <%= videos[i].title %> </h1>
+<h2> <%= videos[i].comedian %> </h2>
+<h2> <%= videos[i].url %> </h2>
+<a href=" <%= videos[i].url %> " > Link </a>
+<% } %>
+</body>
+</html>

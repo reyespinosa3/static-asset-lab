@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+}
+h1 {
+  color: blue;
+  font-size: 36px;
+}
+p {
+  color: blue;
+  font-size: 24px;
+}
+img {
+  height: 400px;
+  width: 300px;
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
+button {
+  font-size: 24px;
+  border-radius: 25%;
+  border-style: ridge;
+  border-width: thick;
+}

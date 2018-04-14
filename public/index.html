@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Rey's Static Asset Page</title>
+  </head>
+  <body>
+    <h1>This is my Static-Asset Lab Project</h1>
+    <p>This is my second locally run server project.</p>
+    <p>I'm mainly going to show a few pictures of dogs here.</p>
+    <p>Click any button below to show an image of a dog playing soccer</p>
+    <p>Click the button again to remove the picture.</p>
+
+    <section>
+      <button id="soccerdog">Soccer Dog</button>
+      <button id="dribbledog">Kick The Ball</button>
+      <button id="goaliedog">Gooooaaaalllll!!!</button>
+    </section>
+
+    <section>
+      <img id="one" class="hidden" src="images/soccerdog.jpg">
+      <img id="two" class="hidden"  src="images/soccerkickdog.jpg">
+      <img id="three" class="hidden"  src="images/soccergoaliedog.jpg">
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
